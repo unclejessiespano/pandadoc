@@ -6,6 +6,7 @@
             "email": "kevinruiz@bigandbrown.com"
         }
     ],
+    "license": "MIT",
     "require": {},
     "autoload": {
         "psr-4":{
