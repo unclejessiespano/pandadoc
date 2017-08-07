@@ -1,0 +1,10 @@
+{
+    "name": "bigandbrown/pandadoc",
+    "authors": [
+        {
+            "name": "Kevin Ruiz",
+            "email": "kevinruiz@bigandbrown.com"
+        }
+    ],
+    "require": {}
+}
