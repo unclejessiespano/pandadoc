@@ -15,7 +15,6 @@ class PandadocServiceProvider extends ServiceProvider
     public function boot()
     {
         //
-        include __DIR__.'/routes.php';
         $this->publishes([
             __DIR__.'/config/config.php' => config_path('pandadoc.php'),
         ]);
@@ -28,9 +27,6 @@ class PandadocServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->make('Bigandbrown\Pandadoc\PandadocController');
-        $this->loadViewsFrom(__DIR__.'/views', 'pandadoc');
-
         $this->app->singleton('pandadoc', function ($app)
         {
             return new Pandadoc($app->config->get('pandadoc', array()));
