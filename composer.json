@@ -6,5 +6,11 @@
             "email": "kevinruiz@bigandbrown.com"
         }
     ],
-    "require": {}
+    "require": {},
+    "autoload": {
+        "psr-4":{
+            "Bigandbrown\\Pandadoc\\":"src/Pandadoc"
+        }
+    },
+    "minimum-stability":"dev"
 }
